@@ -11,22 +11,32 @@
   <body>
     <header id="navbar">
       <div id="top_nav_bar_hidden">
-        <ul>
-          <li>
-            <span style="font-size: 13px; color: #666">
-              <i style="font-size: 16px" class="fa">&#xf095;</i>
+       <div>1860 123 1000</div>
+            <div>Southcity Apts,L&t South City, bangalore</div>   
+            <!-- //////////////// -->
 
-              <span
-                qa="supportNumber"
-                ng-bind="::vm.user.currentAddress.city_support_number"
-                class="ng-binding"
-                >1860 123 1000</span
-              >
-            </span>
-          </li>
-          <li>location</li>
-          <li>Login/sign Up</li>
-        </ul>
+              <div class="navbar_signin" onclick="signin()">Sign In</div>
+                          <span id="showname"></span>
+                <!-- <div </div> -->
+             <div id="sign-in">
+                
+        <div>
+            <span onclick="closeOption()" class="sign-close">X</span>
+            <div id="sign-up-in">
+               
+            </div>
+            <input id="mobile-email" type="text" placeholder="Mobile / Email">
+                        <input id="name" type="text" placeholder="Name">
+            <button onclick="user_data()">Proceed</button>
+            
+        </div>
+    </div>
+
+    <!-- <div id="sign-up">
+       
+        
+    </div> -->
+                <!-- /////////////login part complate///////////// -->
       </div>
       <div id="navbar_niche_wala">
         <div id="logo"><img src="logoo.png" alt="" /></div>
@@ -134,3 +144,4 @@
   </body>
 </html>
 <script src="navbar.js"></script>
+
