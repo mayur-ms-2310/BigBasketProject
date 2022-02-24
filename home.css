@@ -1,0 +1,107 @@
+#container{
+      width:70%;
+
+      margin: auto;
+      text-align: center;
+      font-family:sans-serif;
+    
+}
+.mainDiv{
+    
+}
+
+.subDiv{
+    width: 80%;
+    margin: auto;
+    padding-top: 30px;
+      font-family: serif;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.subDiv>div{
+    width: 20%;
+
+    /* height: 200px; */
+    line-height: 5px;
+
+}
+
+.subDiv>img{
+    width: 100%;
+}
+
+.subDiv>div:hover{
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 12px 48px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 2px;
+   
+}
+
+#fv>div>div{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.subDiv2{
+    width: 80%;
+    margin: auto;
+   font-family: serif;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.subDiv2>div{
+    width: 15%;
+
+    /* height: 200px; */
+    line-height: 5px;
+
+}
+
+.subDiv2>img{
+    width: 100%;
+}
+
+.subDiv2>div:hover{
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 12px 48px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 2px;
+   
+}
+
+
+.fvDiv{
+     width: 90%;
+    margin: auto;
+    padding-top: 30px;
+    display: grid;
+    line-height: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2,auto);
+    row-gap: 10px;
+    column-gap: 10px;
+    grid-template-areas: 
+                           "A A B C"
+                           "A A D E";
+                        
+    
+}
+
+
+#a{
+    grid-area: A;
+}
+#b{
+    grid-area: B;
+}
+#c{
+    grid-area: C;
+}
+#d{
+    grid-area: D;
+}
+#e{
+    grid-area: E;
+}
