@@ -10,6 +10,277 @@
       crossorigin="anonymous"
     ></script>
     <style>
+      #navbar {
+  width: 80%;
+  /* border: 1px solid red; */
+  margin: auto;
+  /* background-color: aqua; */
+}
+
+#top_nav_bar_hidden {
+  display: flex;
+  justify-content: end;
+  gap: 3%;
+}
+#navbar_niche_wala {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* #navbar_niche_wala img {
+  position: absolute;
+  top: 25px;
+  margin-left: 2em;
+}  */
+#top_nav_bar_hidden div {
+  margin-bottom: 1%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+#cart {
+  display: flex;
+  /* height: 3em; */
+  width: 9em;
+  background-color: #f2f2f2;
+  /* border: 1px solid blue; */
+  /* gap: 7px; */
+  padding: 0.2%;
+}
+#cart div {
+  /* border: 1px solid brown; */
+  /* height: min-content; */
+  /* margin: 7px; */
+  text-align: right;
+}
+#cart_img {
+  width: 40%;
+  /* border: 1px solid teal; */
+  display: flex;
+}
+#cart_img img {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  /* border: 1px solid aqua; */
+}
+#cart_qunt {
+  /* line-height: -10px; */
+  /* border: 1px solid lightcoral; */
+  line-height: 10px;
+  /* justify-content: baseline; */
+  text-align: center;
+}
+#search_item {
+  width: 40%;
+}
+
+#search_item input {
+  width: 100%;
+  height: 2em;
+  margin-top: -2%;
+}
+#logo {
+  /* position: absolute; */
+  /* top: -12%; */
+  margin-top: -4%;
+}
+#category_wala_part {
+  display: flex;
+  border: 1px solid gray;
+}
+.category_wala_part_first {
+  /* background-color: #84c225; */
+  /* margin-right: 2%; */
+  /* background-color: blueviolet; */
+  display: flex;
+  margin-right: 1%;
+  /* width: 25%; */
+}
+#category_wala_part > div p {
+  margin-bottom: 0%;
+  margin-top: 0%;
+  padding: 0.5em;
+}
+
+/* //////////////////start dropDown/////////////////// */
+.category {
+  display: flex;
+}
+.category-hover-div {
+  display: flex;
+  /* min-width: 1000px; */
+  width: 70%;
+  position: absolute;
+  height: 420px;
+  background: #fff;
+  /* box-sizing: border-box; */
+  border-radius: 0px 0px 4px 4px;
+
+  visibility: hidden;
+
+  /* overflow: hidden; */
+}
+.category p {
+  background-color: #84c225;
+}
+.category:hover .category-hover-div {
+  margin-top: 2.6%;
+  visibility: visible;
+  opacity: 1;
+  box-shadow: 3px 2px 2px 2px black;
+}
+.category-hover-div-left {
+  width: 20%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.category-hover-div-left-options {
+  width: 100%;
+  height: auto;
+  /* line-height: 60px;
+   */
+  padding: 5%;
+  border-bottom: 1px solid #e4e4e4;
+
+  font-size: 14px;
+  display: flex;
+  color: #555;
+  cursor: pointer;
+  /* padding-right: 25px; */
+  position: relative;
+}
+.category-hover-div-left-options:hover {
+  color: #000;
+}
+
+.category-hover-div-right {
+  width: 70%;
+  height: auto;
+  display: flex;
+  padding-left: 45px;
+  overflow: hidden;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: #eaeaea;
+  z-index: 1;
+}
+.category-hover-div-right a {
+  width: 25%;
+  /* height: auto; */
+  font-size: 14px;
+  line-height: 30px;
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: normal;
+}
+.category-hover-div-right a:hover {
+  background-color: white;
+}
+
+/* ////////////navbar done//////// */
+
+/* image sliding  start */
+
+#show1 img {
+  width: 100%;
+}
+
+#image_slider_under_image {
+  width: 80%;
+  /* border: 1px solid black; */
+  display: flex;
+  margin: auto;
+  justify-content: space-around;
+}
+#image_slider_under_image div {
+  width: 20%;
+  /* border: 1px solid red; */
+  margin-top: 2%;
+  margin-right: 2%;
+  /* text-align: justify; */
+}
+
+#image_slider_under_image image {
+  width: 100%;
+  /* border: 1px solid red; */
+}
+
+/* ////////////////////////login signup////////////// */
+.open :hover {
+  color: #84c225;
+  background-color: aqua;
+}
+
+#sign-in {
+  display: flex;
+  z-index: 1000;
+  position: fixed;
+  width: 42%;
+  height: 69%;
+  margin-right: 230px !important;
+  margin-top: 130px;
+
+  box-shadow: 0 5px 15px rgb(0 0 0 / 50%);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  outline: 0;
+}
+
+#sign-in > div {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+}
+
+#top_nav_bar_hidden .navbar_signin:hover {
+  /* height: 100%;
+  width: 100%; */
+  /* background-color: red; */
+  color: #84c225;
+  cursor: pointer;
+}
+#sign-in > div:nth-of-type(2) {
+  background-color: white;
+  width: 100%;
+}
+
+.sign-close {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#mobile-email,
+#name {
+  border: none;
+  border-bottom: 1px solid #b3b3b3;
+  margin-top: 30px;
+  margin-left: 30px;
+  width: 85%;
+  padding-bottom: 10px;
+}
+
+#sign-up-in ~ button {
+  margin-top: 250px;
+  margin-left: 37px;
+
+  border: none;
+  color: white;
+  background-color: #27bbb8;
+  font-weight: 700;
+  width: 85%;
+  height: 40px;
+}
+#showname {
+  color: #84c225;
+}
+
+      /* anuj part */
       #container {
         display: grid;
         grid-template-columns: 1fr 0.1fr 1.2fr 1.2fr;
@@ -87,8 +358,10 @@
         display: flex;
         justify-content: space-between;
       }
+      
       #icon {
         display: flex;
+        margin-right: 10%;
       }
       #icon > i {
         margin-top: 14px;
@@ -96,8 +369,8 @@
       }
       #upper > p {
         font-size: x-small;
-        margin-left: 75px;
-        margin-right: 20px;
+        margin-left: 10%;
+       
       }
       span {
         -bottom: 2px solid #84c225;
@@ -142,6 +415,118 @@
     </style>
   </head>
   <body>
+    <header id="navbar">
+      <div id="top_nav_bar_hidden">
+       <div>1860 123 1000</div>
+            <div>Southcity Apts,L&t South City, bangalore</div>   
+            <!-- //////////////// -->
+
+              <!-- <div class="navbar_signin" onclick="signin()">Sign In</div>
+                          <span id="showname"></span>
+                <!-- <div </div> -->
+             <!-- <div id="sign-in">
+                
+        <div>
+            <span onclick="closeOption()" class="sign-close">X</span>
+            <div id="sign-up-in">
+               
+            </div>
+            <input id="mobile-email" type="text" placeholder="Mobile / Email">
+                        <input id="name" type="text" placeholder="Name">
+            <button onclick="user_data()">Proceed</button>
+            
+        </div> -->
+    <!-- </div> --> 
+
+    <!-- <div id="sign-up">
+       
+        
+    </div> -->
+                <!-- /////////////login part complate///////////// -->
+      </div>
+      <div id="navbar_niche_wala">
+        <div id="logo"><img src="logoo.png" alt="" /></div>
+        <div id="search_item">
+          <input type="text" name="" id="" />
+        </div>
+        <div id="cart">
+          <div id="cart_img">
+            <img src="basket.png" alt="" />
+          </div>
+          <div id="cart_qunt">
+            <samp> my Basket</samp>
+            <p>0 Item</p>
+          </div>
+        </div>
+      </div>
+      <div id="category_wala_part">
+        <div class="category_wala_part_first">
+
+      <!-- ///////////////dropdown//////// -->
+      <div
+        class="category"
+      >
+        <p>SHOP BY CATEGORY</p>
+
+        <!-- <span>Categories</span> -->
+        <!-- <div class="category-arrow"></div> -->
+        <div class="category-hover-div">
+          <div class="category-hover-div-left">
+            <div class="category-hover-div-left-options">
+              Fruits & Vegetables
+            </div>
+            <div class="category-hover-div-left-options">
+              Foodgrains, Oil & Masala
+            </div>
+            <div class="category-hover-div-left-options">
+              Bakery Cakes & Dairy
+            </div>
+            <div class="category-hover-div-left-options">Beverages</div>
+            <div class="category-hover-div-left-options">
+              Snacks & Branded Foods
+            </div>
+            <div class="category-hover-div-left-options">Beauty & Hygiene</div>
+            <div class="category-hover-div-left-options">
+              Cleaning & Household
+            </div>
+            <div class="category-hover-div-left-options">
+              Kichen, Garden 7 Pets
+            </div>
+            <div class="category-hover-div-left-options">
+              Eggs , Meats & Fish
+            </div>
+            <div class="category-hover-div-left-options">
+              Gourmet & orld Food
+            </div>
+            <div class="category-hover-div-left-options">Baby Care</div>
+            <div class="category-hover-div-left-options">View All</div>
+          </div>
+
+          <!-- /////////////right////////// -->
+          <div class="category-hover-div-right">
+          <a href="product.html">
+            Fresh Vegetables
+          </a>
+          <a href="">
+            Herbs & Seasonings
+          </a>
+          <a href="">
+            Fresh Fruits
+          </a>
+          <a href="">Organic Fruits & Vegetables</a>
+          <a href="">Cuts & Sprouts</a>
+          <a href="">Exotic Fruits & Veggies</a>
+          <a href="">Flower Bouquets, Bunches</a>
+      
+          </div>
+        </div>
+
+      </div>
+              <div><p>OFFERS</p></div>
+               <div><p>BB EXPRESS</p></div>
+                <div><p>BB SPECIALTY</p></div>
+       </div>
+    </header>
     <div id="upper">
       <p>
         HOME&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;FRUITS &
@@ -290,3 +675,6 @@
     </div>
   </body>
 </html>
+<script >
+  
+</script>
