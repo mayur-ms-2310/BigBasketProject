@@ -361,7 +361,7 @@ function addtocart(elem){
   document.querySelector("#cartnum").innerText= cartArr.length;
 }
 function cartpage(){
-  window.location.href="http://127.0.0.1:5500/checkout%20page/checkout.html"
+  window.location.href="../checkout page/checkout.html"
 }
 
 
