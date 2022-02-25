@@ -104,10 +104,11 @@ document.querySelector("#subtotal").innerText="";
 document.querySelector("#total").innerText="";
 localStorage.setItem("cartitems",JSON.stringify(cartArr));
 document.querySelector("#itemno").innerText= cartArr.length;
+document.querySelector("#cartnum").innerText= cartArr.length;
 displaycart(cartArr)
 }
 
-
+document.querySelector("#cartnum").innerText= cartArr.length;
 
 function show2() {}
 
