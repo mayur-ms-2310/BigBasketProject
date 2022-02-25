@@ -308,7 +308,6 @@ margin-left: 50px;
 padding: 8px 15px;
 cursor: pointer;
 margin-bottom: 50px;
-
 }
 
 #continue{
@@ -478,10 +477,87 @@ margin: auto;
 
   #container {
     width: 90%;
-   
-    margin: auto;
-  
+   margin: auto;
   }
+  #card{
+  height: 200px;
+  width:auto;
+  margin-left: 100px;
+  margin-top: -20px;
+  }
+#footer{
+  width:100%;
+  font-size: 12px;
+}
+#checkout{
+  height: 50px;
+  margin-top: -20px;
+  
+}
+#navbar{
+  width:100%
+}
+#empty{
+  margin-bottom: 50px;
+}
+#continue{
+  margin-top: 20px;
+}
+#search_item>div>input{
+ width: 100%;
+ height: 20px;
+}
 
+
+}
+
+@media all and (min-width:100px) and (max-width : 399px){
+
+  #container {
+    width: 90%;
+   margin: auto;
+  }
+  #card{
+  height: 200px;
+  width:auto;
+  margin-left: 100px;
+  margin-top: -20px;
+  font-size: 8px;
+  }
+#footer{
+  width:100%;
+  font-size: 8px;
+}
+#checkout{
+  margin-top: 30px;
+  height: 40px;
+  width: 60%;
+  margin-top: -20px;
+  font-size: 8px;
+  
+}
+#navbar{
+  width:100%;
+  font-size: 16px;
+  
+}
+#empty{
+  margin-bottom: 50px;
+}
+#continue{
+  margin-top: 20px;
+}
+#search_item>div>input{
+ width: 100%;
+ height: 20px;
+}
+
+
+#navbar>div{
+  font-size: 8px;
+}
+.child>div>img{
+  height: 12px;
+}
 
 }
