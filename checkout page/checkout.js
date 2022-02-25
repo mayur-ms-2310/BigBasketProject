@@ -155,3 +155,9 @@ function user_data() {
   showname.innerHTML = "hello " + arr[arr.length - 1].name;
   closeOption();
 }
+
+
+document.querySelector("#checkout").addEventListener("click",checkout)
+function checkout(){
+  window.location.href="../payment/address.html"
+}

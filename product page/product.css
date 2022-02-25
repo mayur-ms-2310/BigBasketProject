@@ -442,6 +442,8 @@ font-size: 12px;
       color: #000;
       font: 13px sans-serif;
       margin-top: -5px;
+      margin-left: 0px;
+      border: none;
     }
     #price {
       display: flex;
