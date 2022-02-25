@@ -256,7 +256,7 @@ padding-top: 0px;
   width: 70%;
   background: #fff;
   margin: auto;
-  height: 1000px;
+  margin-bottom: 50px;
 }
 #innerbox {
   width: 100%;
@@ -304,10 +304,11 @@ color: #555;
 display: inline-block;
 font: 400 12px Roboto Slab,serif;
 box-shadow: 2px 2px 2px #ccc;
-margin-top: 100px;
-  margin-left: 50px;
+margin-left: 50px;
 padding: 8px 15px;
 cursor: pointer;
+margin-bottom: 50px;
+
 }
 
 #continue{
@@ -469,4 +470,18 @@ display: grid;
 height: 100%;
 width: 95%;
 margin: auto;
+}
+
+
+
+@media all and (min-width:400px) and (max-width : 700px){
+
+  #container {
+    width: 90%;
+   
+    margin: auto;
+  
+  }
+
+
 }
