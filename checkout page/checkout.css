@@ -4,6 +4,7 @@
   margin: auto;
   background-color: white;
   margin-bottom: 20px;
+  
 }
 
 #top_nav_bar_hidden {
@@ -33,6 +34,7 @@
 #cartnav div {
   text-align: right;
   font-size: 12px;
+  font-family: sans-serif;
 }
 #cart_img {
   width: 40%;
@@ -56,8 +58,22 @@
     position: relative;
     z-index: 1020;
 }
+
 #search_item {
+ 
   width: 40%;
+  display:flex;
+  justify-content: space-around;
+  
+}
+#search_item>div>img{
+  background-color: #84c225;
+  height: 100%;
+  margin-left: -30px;
+  margin-top: -2px;
+}
+#search_item>div>input{
+  width: 150%;
 }
 
 #search_item input {

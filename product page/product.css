@@ -67,11 +67,24 @@
     z-index: 1020;
 }
 #search_item {
+ 
   width: 40%;
+  display:flex;
+  justify-content: space-around;
+  
+}
+#search_item>div>img{
+  background-color: #84c225;
+  height: 100%;
+  margin-left: -60px;
+  margin-top: -2px;
+}
+#search_item>div>input{
+  width: 150%;
 }
 
 #search_item input {
-  width: 100%;
+  width:100%;
   height: 2em;
   margin-top: -2%;
 }
@@ -258,8 +271,8 @@
     justify-content: center;
    gap: 10px;
    margin-bottom:20px
-    
-}
+  }
+
 #sidebar{
     width: 16%;
    
@@ -593,3 +606,136 @@ width: 95%;
 margin: auto;
  }
  
+
+
+ @media all and (min-width : 400px) and (max-width:700px)
+ {
+  #innerbox {
+   width:100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+   }
+   #vegcontainer{
+   width:100%;
+  }
+  
+#anuj>img{
+width: 100%;
+}
+#navbar{
+  width:100%;
+}
+#centerimg>img{
+  width:100%;
+}
+#fruits{
+  color: green;
+  font-size: 12px;
+  }
+  #first>div{
+    font-size: 12px;
+    line-height: 15px;
+  }
+  #brand>input{
+    width: 100%;
+  }
+  #qtydiv>button{
+   font-size: 8px;
+    }
+
+  #footer{
+    width: 100%;
+   font-size: 14px;
+  }
+  #search_item {
+ 
+    width: 40%;
+    display:flex;
+    justify-content: space-around;
+    
+  }
+  #search_item>div>img{
+    background-color: #84c225;
+    height: 100%;
+    margin-left: -30px;
+    margin-top: -2px;
+  }
+  #search_item>div>input{
+    width: 100%;
+  }
+}
+
+
+
+@media all and (min-width : 100px) and (max-width:399px)
+{
+ #innerbox {
+  width:100%;
+   grid-template-columns: repeat(1, 1fr);
+   grid-template-rows: auto;
+  }
+  #vegcontainer{
+  width:140%;
+ }
+ 
+#anuj>img{
+width: 130%;
+}
+#navbar{
+ width: 130%;
+}
+#centerimg>img{
+ width:130%;
+}
+#fruits{
+ color: green;
+ font-size: 10px;
+ line-height: 18px;
+ }
+ #first>div{
+   font-size: 12px;
+   line-height: 15px;
+ }
+ #brand>input{
+   width: 80%;
+ }
+ #qtydiv>button{
+  font-size: 8px;
+   }
+
+ #footer{
+   width: 100%;
+  font-size: 10px;
+ }
+ 
+ 
+ #cartnav{
+width: 20%;
+font-size:8px;
+height: 60px;
+ 
+}
+#search_item{
+  width: 30%;
+  padding-right: 10px;
+}
+#navbar{
+  font-size: 10px;
+}
+#search_item {
+ 
+  width: 40%;
+  display:flex;
+  justify-content: space-around;
+  
+}
+#search_item>div>img{
+  background-color: #84c225;
+  height: 100%;
+  margin-left: -20px;
+  margin-top: -2px;
+}
+#search_item>div>input{
+  width: 80%;
+}
+}
