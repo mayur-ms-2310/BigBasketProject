@@ -55,10 +55,18 @@ cartArr.map(function(elem,index){
   var col4 = document.createElement("td")
    col4.innerText = "Rs"+""+elem.mrp*elem.quantity
    
+  var col5 = document.createElement("td")
+  col5.innerText="X"
+  col5.setAttribute("id","remove")
+  col5.addEventListener("click",function(){
+    removeitem(index)
+  })
   
+
+
   col3.append(div)
   col1.append(p1,p2)
-  row.append(col1,col2,col3,col4)
+  row.append(col1,col2,col3,col4,col5)
   document.querySelector("#tbody").append(row)
 
   
@@ -160,4 +168,14 @@ function user_data() {
 document.querySelector("#checkout").addEventListener("click",checkout)
 function checkout(){
   window.location.href="../payment/address.html"
+}
+
+function removeitem(index){
+cartArr.splice(index,index+1)
+localStorage.setItem("cartitems",JSON.stringify(cartArr));
+document.querySelector("#itemno").innerText= cartArr.length;
+document.querySelector("#cartnum").innerText= cartArr.length;
+total();
+displaycart(cartArr)
+
 }
