@@ -432,6 +432,7 @@ margin-bottom: 10px;
   width:70%;
   margin: auto;
   background-color: white;
+  border-top: 2px solid yellowgreen;
 }
 .parent1 {
 height: 400px;

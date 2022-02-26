@@ -568,6 +568,7 @@ font-size: 12px;
     #footer{
       width:80%;
       margin: auto;
+      border-top: 2px solid yellowgreen;
 
   }
 .parent1 {
