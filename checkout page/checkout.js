@@ -179,3 +179,8 @@ total();
 displaycart(cartArr)
 
 }
+
+document.querySelector("#continue").addEventListener("click", continueshop)
+function continueshop(){
+window.location.href="../product page/product.html"
+}
