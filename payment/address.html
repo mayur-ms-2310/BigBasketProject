@@ -103,7 +103,7 @@
               </div>
   
               <div id="address_last_div">
-                <button>ADD ADDRESS</button> <button>CANCEL</button>
+                <button id="adres" onclick="adres()">ADD ADDRESS</button> <button>CANCEL</button>
               </div>
             </div>
           </div>
@@ -199,12 +199,22 @@
                   <input type="checkbox">
                   Save this card for faster payments
                 </div>
-                <button id="order">Place order & Pay</button>
+                <button id="order" onclick="order()">Place order & Pay</button>
               </div>
             </div>
           </div>
       </div>
+      
     </div>
   </body>
 </html>
-<script></script>
+<script>
+function order()
+{
+  window.location.href="./otp.html"
+}
+
+function adres(){
+  alert("address added sucessfully")
+}
+</script>
