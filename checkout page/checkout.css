@@ -318,10 +318,10 @@ margin-bottom: 50px;
 }
 #card {
   
-  height: 350px;
-  width: 550px;
+  height: 300px;
+  width: 50%;
   border: 1px solid black;
-  margin-left: 450px;
+  margin-left: 400px;
   border-radius: 10px;
   background-color: rgb(243, 243, 243);
   box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px,
