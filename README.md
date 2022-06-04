@@ -39,7 +39,7 @@ https://roaring-biscuit-218e07.netlify.app/
 Clone the project
 
 ```bash
-  git clone https://github.com/mayur-ms-2310/Himalayausa-clone.git
+  git clone https://github.com/mayur-ms-2310/BigBasketProject.git
 ```
 
 Go to the project directory
