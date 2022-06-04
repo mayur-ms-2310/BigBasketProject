@@ -45,7 +45,7 @@ Clone the project
 Go to the project directory
 
 ```bash
-  cd Himalayausa_Clone_Project
+  cd big-basket clone
 ```
 Run index.html file on browser
 
